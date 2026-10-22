@@ -15,3 +15,4 @@ python3 build.py ../Joint-Operations
 
 ## License
 Site code GPL-3.0-only, text CC BY-SA 4.0. The Hound Protocol name and logo are reserved. Fonts: SIL Open Font License (`assets/fonts`).
+
