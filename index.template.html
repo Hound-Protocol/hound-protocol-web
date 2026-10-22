@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hound Protocol</title>
+<meta name="description" content="Hound Protocol is a community-focused organization. We build ambitious projects, one of them being Joint Operations, a multiplayer mod for Metal Gear Solid V.">
+<meta name="theme-color" content="#0d0e10">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hound Protocol">
+<meta property="og:description" content="A community-focused organization. We build ambitious projects, one of them being Joint Operations.">
+<meta property="og:image" content="https://hound-protocol.github.io/hound-protocol-web/assets/brand/hound-protocol-avatar.png">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/barlow-semi-condensed-extralight.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="assets/css/hp.css">
+</head>
+<body>
+<div class="boot" id="boot" aria-hidden="true">
+  <div>{{BOOT_MARK}}<div class="b-txt">Hound <i>/</i> Protocol</div><div class="b-bar"><span></span></div></div>
+</div>
+<div class="backdrop" aria-hidden="true"><div class="grid"></div><div class="hatch"></div><div class="sweep"></div><div class="vign"></div></div>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#">{{MARK}}<b>Hound Protocol</b></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#projects">Projects</a><a href="#how">How we work</a><a href="#structure">Structure</a><a href="#join">Join</a>
+    </nav>
+    <a class="btn red" href="https://discord.gg/QTpJ89kMCM" target="_blank" rel="noopener noreferrer">Discord</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-label="Hound Protocol">
+    <div class="wrap">
+      <div class="rv">
+        <span class="kicker">Community organization</span>
+        <h1><span class="r">Hound</span><span class="r">Protocol</span></h1>
+        <p class="lead">A <b>community-focused organization</b>. We build ambitious projects, one of them being <b>Joint Operations</b>: online multiplayer for Metal Gear Solid V, for up to 16 players.</p>
+        <div class="cta"><a class="btn red" href="#projects">Our projects</a><a class="btn" href="#join">Join the Hound</a></div>
+      </div>
+      <div class="hero-mark rv" data-d="200"><div class="ring"></div><span class="tick a">HP-01</span><span class="tick b">EST. 2026</span><div id="heroMark">{{HERO_MARK}}</div></div>
+    </div>
+    <div class="scroll-cue">Scroll</div>
+  </section>
+
+  <section class="s" id="projects">
+    <div class="wrap">
+      <div class="s-head rv"><div class="s-num">// 01<b>01</b></div><div><h2>Projects</h2><p>Ambitious, built in the open, free. Every project has its own site, its own plan and its own contract board.</p></div></div>
+      <a class="proj rv wipe" href="https://hound-protocol.github.io/Joint-Operations/">
+        <img src="assets/brand/joint-operations-mark.svg" alt="Joint Operations" width="220" height="203">
+        <div>
+          <span class="tag">Flagship · In development</span>
+          <h3>Joint Operations</h3>
+          <p>A multiplayer mod for Metal Gear Solid V: The Phantom Pain. The host runs the missions, up to 15 clients share the session in the same open world. Windows and Linux. Free and open source.</p>
+          <ul class="facts"><li>Build <b id="joVersion">0.0.x</b></li><li>First playable <b>0.1</b></li><li>Players <b>up to 16</b></li></ul>
+          <div class="meter"><i id="joMeter" data-w="0%"></i></div><ul class="facts"><li id="joProgress">Road to 0.1</li></ul>
+        </div>
+        <span class="go">Visit the project →</span>
+      </a>
+      <div class="next rv" data-d="150"><b>More to come.</b> New projects start when the team is ready for them. Ideas are welcome on Discord.</div>
+    </div>
+  </section>
+
+  <section class="s" id="how">
+    <div class="wrap">
+      <div class="s-head rv"><div class="s-num">// 02<b>02</b></div><div><h2>How we work</h2><p>A passion project, not a boot camp. No deadlines, no time pressure. What we ask for is care.</p></div></div>
+      <div class="cards">
+        <article class="card rv" data-d="0"><span class="n">01</span><h3>Solid hierarchy</h3><p>Everyone knows who decides what. Authority only flows down, and only in its own kind: social, technical or organizational.</p></article>
+        <article class="card rv" data-d="120"><span class="n">02</span><h3>Open communication</h3><p>Anyone can talk to anyone, at any level. Questions, ideas and disagreements happen in the open by default.</p></article>
+        <article class="card rv" data-d="240"><span class="n">03</span><h3>Transparency</h3><p>Decisions are written down with who made them and why. Roles are public. Work is credited to the person who did it, and to the tools they used.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="s" id="structure">
+    <div class="wrap">
+      <div class="s-head rv"><div class="s-num">// 03<b>03</b></div><div><h2>Structure</h2><p>Organized like a unit: four departments, keycard levels from LV2 to LV7, and contractors graded E to S++ in each field.</p></div></div>
+      <div class="chain rv wipe">
+        <div class="dept"><span class="lv">LV6</span><h3>Administration</h3><p>Direction, accounts, community and moderation, recruiting.</p></div>
+        <div class="dept"><span class="lv">LV5</span><h3>Development</h3><p>Architecture, code, merges and contract scope.</p></div>
+        <div class="dept"><span class="lv">LV4</span><h3>Quality</h3><p>Testing on Windows and Linux, reviews, release sign-off.</p></div>
+        <div class="dept"><span class="lv">LV3</span><h3>Contractors</h3><p>Take a contract, deliver it, leave whenever you like.</p></div>
+      </div>
+      <p class="note rv">Careless work and skipped duties earn infractions at every level, leads included. Three suspend, appeals are always open. Full rules: <a href="https://hound-protocol.github.io/Joint-Operations/#/guides">the handbook</a>.</p>
+    </div>
+  </section>
+
+  <section class="s" id="join">
+    <div class="wrap">
+      <div class="s-head rv"><div class="s-num">// 04<b>04</b></div><div><h2>Join the Hound</h2><p>Testers, reviewers and moderators are wanted now. Contracts open to contractors with Joint Operations 0.1.</p></div></div>
+      <div class="join">
+        <div class="panel rv" data-d="0"><div class="big-num" id="openNum">10<small>positions open</small></div><ul class="open-list" id="openList"><li>Windows and Proton testers<span>Quality</span></li><li>Moderators<span>Administration</span></li></ul><a class="btn" href="https://hound-protocol.github.io/Joint-Operations/#/team">All positions</a></div>
+        <div class="panel rv" data-d="150"><h3>Start here</h3><p>Say hello on Discord and tell us what you would like to do. Hand-written and AI-assisted work count the same; AI art does not.</p>
+          <div class="cta" style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn red" href="https://discord.gg/QTpJ89kMCM" target="_blank" rel="noopener noreferrer">Join the Discord</a><a class="btn" href="https://hound-protocol.github.io/Joint-Operations/#/contribute">Contract board</a></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><img class="lock" src="assets/brand/hound-protocol-lockup.svg" alt="Hound Protocol" width="150" height="138"></div>
+    <div><h4>Projects</h4><ul><li><a href="https://hound-protocol.github.io/Joint-Operations/">Joint Operations</a></li><li><a href="https://github.com/Hound-Protocol/Joint-Operations">Source on GitHub</a></li></ul></div>
+    <div><h4>Organization</h4><ul><li><a href="https://hound-protocol.github.io/Joint-Operations/#/team">Team and positions</a></li><li><a href="https://hound-protocol.github.io/Joint-Operations/#/guides">Handbook</a></li><li><a href="https://hound-protocol.github.io/Joint-Operations/#/verify">Verify a Hound ID</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="https://discord.gg/QTpJ89kMCM">Discord</a></li><li><a href="https://github.com/Hound-Protocol">GitHub</a></li></ul></div>
+    <p class="fine">Hound Protocol is a non-commercial community organization. Joint Operations is an unofficial fan project, not affiliated with or endorsed by Konami. Metal Gear and related names are trademarks of their owners. No cookies, analytics or trackers. The Hound Protocol name and logo are reserved; site code is GPL-3.0, text CC BY-SA 4.0.</p>
+  </div>
+</footer>
+<script src="assets/js/hp.js"></script>
+</body>
+</html>
