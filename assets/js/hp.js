@@ -83,7 +83,7 @@
   }, function () {});
   get("data/team.json").then(function (t) {
     if (!t.positions || !t.positions.length) return; // older data: keep the defaults
-    var list = (t.positions || []).filter(function (p) { return p.kind === "open" || (p.kind === "seat" && p.holders.length < p.need); });
+    var list = (t.positions || []).filter(function (p) { return p.kind === "open" || (p.kind === "seat" && !p.after && p.holders.length < p.need); });
     var n = $("#openNum"), ul = $("#openList");
     if (n) n.innerHTML = list.length + "<small>positions open</small>";
     if (ul) ul.innerHTML = list.slice(0, 6).map(function (p) { return "<li>" + esc(p.title) + "<span>" + esc(p.dept) + "</span></li>"; }).join("");
