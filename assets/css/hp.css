@@ -205,3 +205,16 @@ footer .fine { grid-column: 1 / -1; margin-top: 20px; padding-top: 20px; border-
 }
 .no-js .rv { opacity: 1; transform: none; }
 .no-js .boot { display: none; }
+/* Planned project card (Lost Planet 2) */
+.proj.planned { margin-top: 18px; background: linear-gradient(110deg, rgba(120,170,200,.05), rgba(20,22,25,.85) 40%); border-style: dashed; }
+.proj.planned:hover { border-color: #8fb8cc; transform: none; }
+.proj.planned .tag, .proj.planned .go { color: #8fb8cc; }
+.proj.planned .ph { aspect-ratio: 1; display: grid; place-content: center; text-align: center; gap: 10px; border: 1px dashed #3a4650; background: repeating-linear-gradient(135deg, rgba(143,184,204,.05) 0 10px, transparent 10px 20px); }
+.proj.planned .ph b { font: 200 64px/1 var(--ui); letter-spacing: .12em; color: #cfe0e8; }
+.proj.planned .ph span { font: 400 11px/1 var(--mono); letter-spacing: .24em; text-transform: uppercase; color: var(--fg-2); }
+.proj.planned .rules { margin-top: 8px; } .proj.planned .rules li::before { content: "// "; color: #8fb8cc; }
+.proj .src { max-width: none; margin: 10px 0 0; font: 400 12px/1.6 var(--mono); color: var(--fg-2); }
+.proj .src a { color: inherit; }
+.proj.planned .go { text-decoration: none; }
+@media (max-width: 900px) { .proj.planned .ph b { font-size: 42px; } }
+@media (max-width: 620px) { .proj.planned .ph { width: 140px; } }
