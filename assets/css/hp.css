@@ -218,3 +218,15 @@ footer .fine { grid-column: 1 / -1; margin-top: 20px; padding-top: 20px; border-
 .proj.planned .go { text-decoration: none; }
 @media (max-width: 900px) { .proj.planned .ph b { font-size: 42px; } }
 @media (max-width: 620px) { .proj.planned .ph { width: 140px; } }
+/* The first game: the main project, gold and classified until it is announced */
+.proj.game { background: linear-gradient(110deg, rgba(224,178,90,.10), rgba(20,22,25,.88) 45%); border-color: rgba(224,178,90,.45); }
+.proj.game:hover { border-color: #e0b25a; transform: none; }
+.proj.game .tag, .proj.game .go { color: #e0b25a; } .proj.game .go { text-decoration: none; }
+.proj.game .ph { position: relative; aspect-ratio: 1; display: grid; place-content: center; text-align: center; gap: 10px; border: 1px solid rgba(224,178,90,.4); background: repeating-linear-gradient(45deg, rgba(224,178,90,.06) 0 3px, transparent 3px 8px), #121417; overflow: hidden; }
+.proj.game .ph b { font: 200 54px/1 var(--ui); letter-spacing: .1em; color: #f1dcae; }
+.proj.game .ph span { font: 400 11px/1 var(--mono); letter-spacing: .24em; text-transform: uppercase; color: var(--fg-2); }
+.proj.game .ph .stamp { position: absolute; top: 16px; left: -30px; width: 140px; padding: 4px 0; transform: rotate(-35deg); background: #d0303a; color: #fff; font-size: 10px; letter-spacing: .3em; }
+.proj.game h3 { color: #fff; }
+.proj.mod { margin-top: 18px; }
+@media (max-width: 900px) { .proj.game .ph b { font-size: 36px; } }
+@media (max-width: 620px) { .proj.game .ph { width: 140px; } }

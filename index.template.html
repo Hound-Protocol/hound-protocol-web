@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Hound Protocol</title>
-<meta name="description" content="Hound Protocol is a community-focused organization. We build ambitious projects, one of them being Joint Operations, a multiplayer mod for Metal Gear Solid V.">
+<meta name="description" content="Hound Protocol is a community-focused organization. We build ambitious projects: our first video game, coming soon, and two multiplayer mods, Joint Operations for Metal Gear Solid V and Lost Planet 2 Multiplayer.">
 <meta name="theme-color" content="#0d0e10">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hound Protocol">
-<meta property="og:description" content="A community-focused organization. We build ambitious projects, one of them being Joint Operations.">
+<meta property="og:description" content="A community-focused organization. We build ambitious projects: our first video game, coming soon, and two multiplayer mods.">
 <meta property="og:image" content="https://hound-protocol.github.io/hound-protocol-web/assets/brand/hound-protocol-avatar.png">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/barlow-semi-condensed-extralight.woff" as="font" type="font/woff" crossorigin>
@@ -37,7 +37,7 @@
       <div class="rv">
         <span class="kicker">Community organization</span>
         <h1><span class="r">Hound</span><span class="r">Protocol</span></h1>
-        <p class="lead">A <b>community-focused organization</b>. We build ambitious projects, starting with <b>Joint Operations</b>, online multiplayer for Metal Gear Solid V for up to 16 players, and next <b>Lost Planet 2</b> online again.</p>
+        <p class="lead">A <b>community-focused organization</b>. We build ambitious projects: <b>our first video game</b>, coming soon, and two multiplayer mods: <b>Joint Operations</b>, online play for up to 16 in Metal Gear Solid V, and next <b>Lost Planet 2</b> online again.</p>
         <div class="cta"><a class="btn red" href="#projects">Our projects</a><a class="btn" href="#join">Join the Hound</a></div>
       </div>
       <div class="hero-mark rv" data-d="200"><div class="ring"></div><span class="tick a">HP-01</span><span class="tick b">EST. 2026</span><div id="heroMark">{{HERO_MARK}}</div></div>
@@ -47,14 +47,24 @@
 
   <section class="s" id="projects">
     <div class="wrap">
-      <div class="s-head rv"><div class="s-num">// 01<b>01</b></div><div><h2>Projects</h2><p>Ambitious, built in the open, free. Every project has its own site, its own plan and its own contract board.</p></div></div>
-      <a class="proj rv wipe" href="https://hound-protocol.github.io/Joint-Operations/">
+      <div class="s-head rv"><div class="s-num">// 01<b>01</b></div><div><h2>Projects</h2><p>Our first video game leads the way. Beside it, two multiplayer mods, built in the open and free, each with its own plan.</p></div></div>
+      <article class="proj game rv wipe" id="first-game" aria-labelledby="gameTitle">
+        <div class="ph" aria-hidden="true"><span class="stamp">Classified</span><b>HP&#8209;G1</b><span>Name withheld</span></div>
+        <div>
+          <span class="tag">Main project · Coming soon</span>
+          <h3 id="gameTitle">Our first video game</h3>
+          <p>Hound Protocol's first original game: an atmospheric offroad trucking game, set in a world of our own. Its name and details stay under wraps for now. More when it is ready.</p>
+          <ul class="facts"><li>Original game</li><li>Our own world</li><li>Status <b>coming soon</b></li></ul>
+        </div>
+        <a class="go" href="https://discord.gg/QTpJ89kMCM" target="_blank" rel="noopener noreferrer">Follow on Discord →</a>
+      </article>
+      <a class="proj mod rv wipe" href="https://hound-protocol.github.io/Joint-Operations/">
         <img src="assets/brand/joint-operations-mark.svg" alt="Joint Operations" width="220" height="203">
         <div>
-          <span class="tag">Flagship · In development</span>
+          <span class="tag">Multiplayer mod · In development</span>
           <h3>Joint Operations</h3>
           <p>A multiplayer mod for Metal Gear Solid V: The Phantom Pain. The host runs the missions, up to 15 clients share the session in the same open world. Windows and Linux. Free and open source.</p>
-          <ul class="facts"><li>Build <b id="joVersion">0.0.x</b></li><li>First playable <b>0.1</b></li><li>Players <b>up to 16</b></li></ul>
+          <ul class="facts"><li>Website <b id="joVersion">1.x</b></li><li>First playable <b>0.1</b></li><li>Players <b>up to 16</b></li></ul>
           <div class="meter"><i id="joMeter" data-w="0%"></i></div><ul class="facts"><li id="joProgress">Road to 0.1</li></ul>
         </div>
         <span class="go">Visit the project →</span>
@@ -62,7 +72,7 @@
       <article class="proj planned rv wipe" id="lost-planet-2" aria-labelledby="lp2Title">
         <div class="ph" aria-hidden="true"><b>LP2</b><span>Working name</span></div>
         <div>
-          <span class="tag">Planned · Not started</span>
+          <span class="tag">Multiplayer mod · Planned, not started</span>
           <h3 id="lp2Title">Lost Planet&nbsp;2 Multiplayer</h3>
           <p>Lost Planet 2 (2010) was made to be played together: a campaign for four players and versus matches for sixteen. On PC its online play ran on Games for Windows Live. Steam sales have been paused since 2021, and an update in May 2025 removed Games for Windows Live, and official online play with it. We want owners of the game to play it together online again, and later perhaps other Lost Planet titles.</p>
           <ul class="facts"><li>Co-op <b>up to 4</b></li><li>Versus <b>up to 16</b></li><li>PC</li><li>Your own copy</li></ul>
@@ -105,7 +115,8 @@
       <div class="join">
         <div class="panel rv" data-d="0"><div class="big-num" id="openNum">3<small>positions open</small></div><ul class="open-list" id="openList"><li>Windows and Proton testers<span>Quality</span></li><li>Reviewers<span>Quality</span></li></ul><a class="btn" href="https://hound-protocol.github.io/Joint-Operations/#/team">All positions</a></div>
         <div class="panel rv" data-d="150"><h3>Start here</h3><p>Say hello on Discord and tell us what you would like to do. Hand-written and AI-assisted work count the same; AI art does not.</p>
-          <div class="cta" style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn red" href="https://discord.gg/QTpJ89kMCM" target="_blank" rel="noopener noreferrer">Join the Discord</a></div></div>
+          <div class="cta" style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn red" href="https://discord.gg/QTpJ89kMCM" target="_blank" rel="noopener noreferrer">Join the Discord</a><a class="btn" href="https://hound-protocol.github.io/Joint-Operations/#/guides/hp-gde-017">Can I contribute?</a></div>
+          <p class="note">Not sure you have the skills? You probably do: testing, reviewing, writing and research all count. <a href="https://hound-protocol.github.io/Joint-Operations/#/guides/hp-gde-017">Find where you fit</a> in five questions.</p></div>
       </div>
     </div>
   </section>
@@ -114,10 +125,10 @@
 <footer>
   <div class="wrap">
     <div><img class="lock" src="assets/brand/hound-protocol-lockup.svg" alt="Hound Protocol" width="150" height="138"></div>
-    <div><h4>Projects</h4><ul><li><a href="https://hound-protocol.github.io/Joint-Operations/">Joint Operations</a></li><li><a href="#lost-planet-2">Lost Planet 2 Multiplayer</a> (planned)</li><li><a href="https://github.com/Hound-Protocol/Joint-Operations">Source on GitHub</a></li></ul></div>
+    <div><h4>Projects</h4><ul><li><a href="#first-game">Our first video game</a> (coming soon)</li><li><a href="https://hound-protocol.github.io/Joint-Operations/">Joint Operations</a></li><li><a href="#lost-planet-2">Lost Planet 2 Multiplayer</a> (planned)</li><li><a href="https://github.com/Hound-Protocol/Joint-Operations">Source on GitHub</a></li></ul></div>
     <div><h4>Organization</h4><ul><li><a href="https://hound-protocol.github.io/Joint-Operations/#/team">Team and positions</a></li><li><a href="https://hound-protocol.github.io/Joint-Operations/#/guides">Handbook</a></li><li><a href="https://hound-protocol.github.io/Joint-Operations/#/verify">Verify a Hound ID</a></li></ul></div>
     <div><h4>Contact</h4><ul><li><a href="https://discord.gg/QTpJ89kMCM">Discord</a></li><li><a href="https://github.com/Hound-Protocol">GitHub</a></li></ul></div>
-    <p class="fine">Hound Protocol is a non-commercial community organization. Joint Operations is an unofficial fan project, not affiliated with or endorsed by Konami. Metal Gear, Lost Planet and related names are trademarks of their owners; Hound Protocol is not affiliated with Konami or Capcom. No cookies, analytics or trackers. The Hound Protocol name and logo are reserved; site code is GPL-3.0, text CC BY-SA 4.0.</p>
+    <p class="fine">Hound Protocol is a community organization; its mods are free and non-commercial. Joint Operations is an unofficial fan project, not affiliated with or endorsed by Konami. Metal Gear, Lost Planet and related names are trademarks of their owners; Hound Protocol is not affiliated with Konami or Capcom. No cookies, analytics or trackers. The Hound Protocol name and logo are reserved; site code is GPL-3.0, text CC BY-SA 4.0.</p>
   </div>
 </footer>
 <script src="assets/js/hp.js"></script>

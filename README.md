@@ -1,6 +1,6 @@
 # Hound Protocol
 
-The website of Hound Protocol, a community-focused organization that builds ambitious projects, one of them being [Joint Operations](https://hound-protocol.github.io/Joint-Operations/).
+The website of Hound Protocol, a community-focused organization that builds ambitious projects: our first video game, coming soon, and two multiplayer mods, [Joint Operations](https://hound-protocol.github.io/Joint-Operations/) and Lost Planet 2 Multiplayer (planned).
 
 Live at https://hound-protocol.github.io/hound-protocol-web/
 
