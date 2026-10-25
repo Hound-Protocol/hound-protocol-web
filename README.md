@@ -1,6 +1,6 @@
 # Hound Protocol
 
-The website of Hound Protocol, a community-focused organization that builds ambitious projects: Lug Nuts, an offroad trucking game and our first major project, and two multiplayer mods, [Joint Operations](https://hound-protocol.github.io/Joint-Operations/) and Lost Planet 2 Multiplayer (planned).
+The website of Hound Protocol, a community-focused organization that builds ambitious projects: AFTERHAUL, an offroad trucking game for up to 8 players and our first major project, and two multiplayer mods, [Joint Operations](https://hound-protocol.github.io/Joint-Operations/) and Lost Planet 2 Multiplayer (planned).
 
 Live at https://hound-protocol.github.io/hound-protocol-web/
 
