@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """Write index.html for the Hound Protocol site, with the logo inlined so it can animate.
 
-The logo geometry comes from the Joint Operations repository (tools/brand/logos.py), so both
-sites always use the same mark. Usage: python3 build.py [PATH_TO_JOINT_OPERATIONS_REPO]
+Also writes docs.html, the documentation library, from docs.template.html.
+The logo geometry comes from the Joint Operations website repository (tools/brand/logos.py), so both
+sites always use the same mark. Usage: python3 build.py [PATH_TO_JOINT_OPERATIONS_WEB_REPO]
 """
 import pathlib, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
-JO = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else HERE.parent / "Joint-Operations").resolve()
+JO = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else HERE.parent / "joint-operations-web").resolve()
 sys.path.insert(0, str(JO / "tools/brand"))
 import logos  # noqa: E402
 
@@ -21,5 +22,7 @@ hero_mark = f'<svg viewBox="0 0 200 200" role="img" aria-label="Hound Protocol">
 page = (HERE / "index.template.html").read_text(encoding="utf-8")
 page = page.replace("{{MARK}}", mark).replace("{{BOOT_MARK}}", boot_mark).replace("{{HERO_MARK}}", hero_mark)
 (HERE / "index.html").write_text(page, encoding="utf-8")
+docs = (HERE / "docs.template.html").read_text(encoding="utf-8").replace("{{MARK}}", mark)
+(HERE / "docs.html").write_text(docs, encoding="utf-8")
 (HERE / "assets/img/favicon.svg").write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><rect width="200" height="200" rx="30" fill="{K}"/>{slash}{face}</svg>\n', encoding="utf-8")
-print("Wrote index.html and assets/img/favicon.svg")
+print("Wrote index.html, docs.html and assets/img/favicon.svg")

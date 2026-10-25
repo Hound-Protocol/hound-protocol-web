@@ -1,0 +1,17 @@
+{
+  "note": "Organization-wide documents shown on the Documentation page. Documents about a single project live with that project: Joint Operations in Hound-Protocol/Joint-Operations.",
+  "docs": [
+    { "id": "team", "title": "Team", "group": "Organization", "path": "docs/team.md" },
+    { "id": "governance", "title": "Governance", "group": "Organization", "path": "docs/governance.md" },
+    { "id": "departments", "title": "Departments and Grades", "group": "Organization", "path": "docs/departments.md" },
+    { "id": "code-of-conduct", "title": "Code of Conduct", "group": "Organization", "path": "docs/code-of-conduct.md" },
+    { "id": "brand", "title": "Brand", "group": "Organization", "path": "docs/brand.md" },
+    { "id": "adr-0009", "title": "0009 Departments and Ranks", "group": "Decisions", "path": "docs/decisions/0009-departments-and-ranks.md" },
+    { "id": "adr-0013", "title": "0013 Chain of Command", "group": "Decisions", "path": "docs/decisions/0013-chain-of-command.md" },
+    { "id": "adr-0015", "title": "0015 AI Agents and Attribution", "group": "Decisions", "path": "docs/decisions/0015-ai-agents-and-attribution.md" },
+    { "id": "adr-0016", "title": "0016 Accountability", "group": "Decisions", "path": "docs/decisions/0016-accountability.md" }
+  ],
+  "projects": [
+    { "title": "Joint Operations documentation", "url": "https://hound-protocol.github.io/joint-operations-web/#/docs/library", "text": "The mod's plans, research, decisions and the Handbook." }
+  ]
+}

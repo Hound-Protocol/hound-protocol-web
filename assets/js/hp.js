@@ -62,7 +62,7 @@
   }
 
   // Live project data from the Joint Operations site
-  var JO = location.hostname === "hound-protocol.github.io" ? "/Joint-Operations/" : "https://hound-protocol.github.io/Joint-Operations/";
+  var JO = location.hostname === "hound-protocol.github.io" ? "/joint-operations-web/" : "https://hound-protocol.github.io/joint-operations-web/";
   function get(path, text) {
     return new Promise(function (ok, fail) {
       var r = new XMLHttpRequest(); r.open("GET", JO + path, true); r.timeout = 8000;
