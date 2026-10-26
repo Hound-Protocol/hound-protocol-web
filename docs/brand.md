@@ -1,52 +1,44 @@
-# Brand: Hound Protocol and Joint Operations
+# Brand: Hound Protocol
+Status: v2 · Updated: 2026-10-26 · Owner: Administration
 
-Status: v1 · Updated: 2026-10-23 · Owner: Administration
+This is the brand of the organization. Each project has its own brand, kept in that project's documentation. Organization and project brands share a family look but never share colors or marks.
 
-Two marks, one family. **Hound Protocol** is the team. **Joint Operations** is the mod. Every piece is original vector artwork drawn in code (`joint-operations-web/tools/brand/build_brand.py`). There is no generative AI imagery ([AI Use Policy](https://github.com/Hound-Protocol/Joint-Operations/blob/main/docs/guides/HP-POL-002-ai-use-policy.md)).
-
-## The marks
-| Mark | Meaning | Files (`joint-operations-web/site/assets/brand/`) |
+## The mark
+| Mark | Meaning | Files (`assets/brand/`) |
 |---|---|---|
 | **Hound Protocol**: a geometric hound face over a red slash, with HOUND / PROTOCOL beneath (lockup) | The organization: watchful, sharp, organized like a unit | `hound-protocol-mark.svg` (no name), `hound-protocol-lockup.svg` (with name), each with `-mono` and `-light`; `hound-protocol-avatar.png` |
-| **Joint Operations badge**: a unit shield with an orange JOINT OPS band and a sixteen-point star around the orange host diamond | Sixteen players around one host | `joint-operations-mark.svg`, `-mono`, `-light`, `-white`; `joint-operations-avatar.png` |
-| **Joint Operations wordmark**: J, the star inside the O, speed bars, the full name and "up to 16 operatives" | The project's name in full | `joint-operations-lockup.svg`, `-mono`, `-light` |
-| **Background scene**: saluting operatives and their commander | Kept in the brand files; not used on the website now (the main menu shows the faint Joint Operations badge) | `joint-operations-salute.svg` |
 
-All marks are drawn in code (`joint-operations-web/tools/brand/logos.py`, `salute.py`) in the style of unit insignia, with our own shapes. They are not modeled on any Konami logo.
-
-Also: `joint-operations-web/site/assets/img/favicon.svg` (simplified mark for small sizes) and `joint-operations-web/site/assets/img/og.png` (link previews and the README banner).
+The mark is original vector artwork drawn in code. There is no generative AI imagery ([HP-POL-002](handbook/HP-POL-002-ai-use-policy.md)). The website's tab icon is `assets/img/favicon.svg`.
 
 ## Colors
 | Name | Hex | Use |
 |---|---|---|
-| Field white | `#e9edee` | Marks and text on dark, both brands |
-| Ops orange | `#f28c28` | **Joint Operations**: the host marker, inner ring and accents. Joint Operations is orange and white |
-| Hound red | `#d0303a` | **Hound Protocol**: the inner ring, eye and collar. Hound Protocol is white, black and red |
-| Night | `#0b0e10` | Backgrounds, and the Hound Protocol insignia field |
+| Field white | `#e9edee` | Marks and text on dark |
+| Hound red | `#d0303a` | The slash, ring, eye and collar. Hound Protocol is white, black and red |
+| Hound red, bright | `#ff4b55` | Highlights and focus on dark backgrounds |
+| Night | `#0b0e10` | Backgrounds and the insignia field |
+| Ink | `#08090a` | The deepest background, behind the website |
 | Paper | `#f3efe6` | Light backgrounds (use the `-light` files) |
-| Site gold | `#c9a24a` | The website's interface accent only, not the logos |
-| Keycard colours | LV0 `#5d6468` (greyed, inactive) · LV1 `#7d93a6` slate · LV2 `#dfe5e7` silver · LV3 `#7fbf8a` green · LV4 `#4fb3d9` cyan · LV5 `#f28c28` orange · LV6 `#a77de0` violet · LV7 `#c0141f` blood red · guest pass `#d4ae52` gold ribbon | Keycards and clearance labels on the website |
-| Document classes | Policy `#b02a22` · Procedure `#1d6a8a` · Guide `#a86f00` | Handbook sheets and their type stripes |
+| Keycards | LV0 `#5d6468` greyed · LV1 `#7d93a6` slate · LV2 `#dfe5e7` silver · LV3 `#7fbf8a` green · LV4 `#4fb3d9` cyan · LV5 `#f28c28` orange · LV6 `#a77de0` violet · LV7 `#c0141f` blood red · guest pass `#d4ae52` gold | Keycards and clearance labels |
+| Document classes | Policy `#b02a22` · Procedure `#1d6a8a` · Guide `#a86f00` | Handbook sheets and their stripes |
 
-Type: **Barlow Semi Condensed** (light, wide letter-spacing, uppercase) for names. **Share Tech Mono** for labels. Both are licensed under the SIL Open Font License.
+Type: **Barlow Semi Condensed** for names and headings. **Share Tech Mono** for labels and codes. Both are licensed under the SIL Open Font License.
 
 ## Use
 - Keep clear space around a mark equal to a quarter of its width.
 - On light backgrounds use the `-light` files. On photos use the `-mono` files in one color.
-- Keep each brand in its own colors: never put Hound red on the Joint Operations marks or Ops orange on the Hound Protocol mark.
-- Never stretch, rotate, recolor beyond the palette, add effects, or redraw the hound.
-- Discord server icon and GitHub organization avatar: `hound-protocol-avatar.png`. Mod and release artwork: `joint-operations-avatar.png`.
+- Never stretch, rotate, recolor beyond the palette, add effects or redraw the hound.
+- A project's colors never appear on the Hound Protocol mark, and Hound red never appears on a project's mark.
+- Discord server icon and GitHub organization avatar: `hound-protocol-avatar.png`.
 
 ## Inspired by, never imitating
-We take the *feel* of tactical espionage games (insignia, radar, field manuals) and make our own marks. Rules, from the [Clean-Room and IP Policy](https://github.com/Hound-Protocol/Joint-Operations/blob/main/docs/guides/HP-POL-003-clean-room-and-ip.md):
-- **No** Konami logos, typefaces, characters, emblems or recognizable game UI.
-- **No** fox heads, skulls with wings, diamonds containing dogs, or other elements that echo existing in-game unit emblems. The hound and the diamond stay in separate marks.
-- **No** game screenshots or game art in our branding.
-- "Metal Gear Solid V" is used only in plain text to say what the mod works with, next to the unofficial disclaimer.
+We take the feel of field manuals, insignia and dossiers, and make our own marks ([HP-POL-003](handbook/HP-POL-003-third-party-rights.md)).
+- No logos, typefaces, characters or emblems that belong to someone else.
+- No elements that echo another unit's or company's emblem.
 - When in doubt, ask Administration before publishing.
 
-## Rebuilding
-```
-python3 tools/brand/build_brand.py
-```
-The PNGs (avatars, `og.png`) are rendered from `joint-operations-web/tools/brand/render.html` in a browser at 1200 × 630 and 512 × 512.
+## Project brands
+A project keeps its own marks, colors and rules in its documentation ([HP-GDE-021](handbook/HP-GDE-021-project-documentation.md)). Today: see [Projects](projects.md).
+
+## Source
+The marks were drawn by code that lives with the Joint Operations website. The finished files are copied here. Moving the drawing code into this repository is open.

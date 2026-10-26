@@ -1,18 +1,25 @@
 # Projects
 Status: Current · Updated: 2026-10-26 · Applies to: everyone
 
-Hound Protocol is a non-commercial, community-focused organization. It builds ambitious projects. Each project has its own repository and documentation. What applies to every project is in this Library and the Handbook.
+Hound Protocol has one main project and several side projects. Each has its own repository, team and documentation. This page only points to them. Their design, plans, research and guides live there, not here.
 
-| Project | State | What it is | Where its documents live |
+## Main project
+| Project | State | What it is | Its documentation |
 |---|---|---|---|
-| **AFTERHAUL** | In development | An offroad trucking game for crews of up to 8 players. Our first major project | Kept by the project team. Public pages will appear when the project is ready to share |
-| **Joint Operations** | In development | A multiplayer mod: online play for up to 16 in Metal Gear Solid V. An unofficial fan project | [Joint Operations documentation](https://hound-protocol.github.io/joint-operations-web/#/docs/library) |
-| **Lost Planet 2 Multiplayer** | Planned | Online play for Lost Planet 2 after Games for Windows Live was removed. Not affiliated with Capcom | Planning is on Discord |
+| **AFTERHAUL** | In development | An offroad trucking game for crews of up to 8 players. Our main project | Kept by the project team. Public pages appear when the project is ready to share |
+
+## Side projects
+| Project | State | What it is | Its documentation |
+|---|---|---|---|
+| **Joint Operations** | In development | Online play for up to 16 players in an existing game, as a fan-made mod. Unofficial | [Joint Operations documentation](https://hound-protocol.github.io/joint-operations-web/#/docs/library) |
+| **Lost Planet 2 Multiplayer** | Planned | Online play for a game whose online service was removed. Unofficial | Planning is on Discord |
 
 ## What every project follows
-- The [Governance](governance.md) and [Chain of Command](handbook/HP-POL-007-chain-of-command.md).
-- The [AI Use Policy](handbook/HP-POL-002-ai-use-policy.md) and [ADR 0015](decisions/0015-ai-agents-and-attribution.md): AI-assisted work is allowed and credited; AI-generated art, music, sound and voices are not.
-- The [Accountability policy](handbook/HP-POL-009-accountability.md).
+- [Governance](governance.md) and the [Chain of Command](handbook/HP-POL-007-chain-of-command.md).
+- The [AI Use Policy](handbook/HP-POL-002-ai-use-policy.md) and [ADR 0015](decisions/0015-ai-agents-and-attribution.md).
+- The [Third-Party Rights Policy](handbook/HP-POL-003-third-party-rights.md) and the [Licensing and Attribution Policy](handbook/HP-POL-008-licensing-and-attribution.md).
+- The [Accountability Policy](handbook/HP-POL-009-accountability.md).
 - The [Brand](brand.md) rules.
 
-New projects start when the team is ready for them. Ideas are welcome on Discord.
+## What a project documents for itself
+See [Project Documentation Standard](handbook/HP-GDE-021-project-documentation.md). To start a project, see [Starting a Project](handbook/HP-SOP-013-starting-a-project.md).

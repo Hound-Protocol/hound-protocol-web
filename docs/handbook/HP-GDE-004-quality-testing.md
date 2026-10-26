@@ -1,46 +1,45 @@
 # Quality Guide: Testing and Bug Reports
-Code: HP-GDE-004 · Version 1.1 · Effective 2026-10-23 · Owner: Quality · For: Quality Department and testers
+Code: HP-GDE-004 · Version 2.0 · Effective 2026-10-26 · Owner: Quality · For: Quality Department and testers
 
 ## Your job
 Make sure what we ship works on real machines. Every test result you write down saves someone hours.
 
-**Hands-on:** what to click, what to try to break and how to benchmark the website and the game are in the [Tester's Field Manual](HP-GDE-020-testers-field-manual.md).
-
-## Test rig
+## Test setup
+Each project lists its test setup in its own documents. Whatever it is, record:
 | Item | Record |
 |---|---|
-| Game | Build 1.0.15.4; SHA-256 of `mgsvtpp.exe` |
-| Platform | Windows version, or distro + Steam build + Proton version |
+| Product | Version and build, with a checksum where there is one |
+| Platform | Operating system and version, and any compatibility layer with its version |
 | Hardware | CPU, GPU, driver, RAM |
-| Other mods | Names and versions (ideally none for clean tests) |
+| Other software | Names and versions (ideally none for clean tests) |
 
-Keep the rig the same between tests. If something changes, note it.
+Keep the setup the same between tests. If something changes, note it.
 
 ## Kinds of tests
-- **Smoke test:** the game starts, the mod loads, the main menu appears. Every build.
-- **Checklist test:** the release checklist, step by step, on Windows and on Proton.
-- **Session test:** 2 or more players, joins and leaves, 30 minutes of play, note desyncs.
-- **Soak test:** a long session (2+ hours) to find slow leaks and drift.
-- **Bad network:** the same with the standard latency and packet loss profiles ([HP-GDE-020](HP-GDE-020-testers-field-manual.md), section 8).
-- **Benchmark:** frame rate and frame times with and without the mod, and the website's Lighthouse scores ([HP-GDE-020](HP-GDE-020-testers-field-manual.md), sections 6 and 8).
+- **Smoke test:** it starts and the main screen appears. Every build.
+- **Checklist test:** the release checklist, step by step, on every supported platform.
+- **Session test:** two or more people, joins and leaves, 30 minutes of use, note problems.
+- **Soak test:** a long run (2 hours or more) to find slow leaks and drift.
+- **Bad network:** the same with limited bandwidth, delay and packet loss.
+- **Benchmark:** frame rate or response time with and without the change.
 
 ## Writing a bug report
 ```
 Title: <what breaks>, short
 Severity: S1–S4 (see HP-POL-006)
-Build: mod version / game build / platform / Proton version
+Build: product version / platform / platform version
 Steps:
 1.
 2.
 Expected:
 Actual:
-Logs: attach the mod log (never game files)
+Logs: attach the product's log (never protected files)
 Video or screenshot: if it helps
 ```
 One bug per report. Search first for duplicates.
 
 ## Reviewing a contract
-Check every acceptance criterion yourself, not from the description. Tick each on the issue. If one fails, comment with what you saw and request changes. See [HP-SOP-002](HP-SOP-002-pull-request-review.md).
+Check every acceptance criterion yourself, not from the description. Tick each on the issue. If one fails, comment with what you saw and request changes ([HP-SOP-002](HP-SOP-002-pull-request-review.md)).
 
 ## Signing off a release
 Follow [HP-SOP-003](HP-SOP-003-release.md) and the gates in [HP-POL-006](HP-POL-006-quality-policy.md). Write the release's quality report: tests run, platforms, open bugs, what was not tested.

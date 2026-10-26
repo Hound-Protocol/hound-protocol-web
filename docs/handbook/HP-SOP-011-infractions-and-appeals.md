@@ -1,5 +1,5 @@
 # Issuing Infractions and Handling Appeals
-Code: HP-SOP-011 · Version 1.0 · Effective 2026-10-22 · Owner: Administration · Used by: Development, Administration and the owner
+Code: HP-SOP-011 · Version 2.0 · Effective 2026-10-26 · Owner: Administration · Used by: Development, Administration and the owner
 
 How to apply the [Accountability and Infractions Policy](HP-POL-009-accountability.md) fairly and the same way every time. There are no time limits anywhere in this procedure.
 
@@ -17,7 +17,7 @@ How to apply the [Accountability and Infractions Policy](HP-POL-009-accountabili
 3. **Write it down** where it happened (the pull request or issue): what went wrong, the evidence, and which rule it breaks. Be factual and kind.
 4. **Record it** with a pull request that runs:
 ```
-python3 tools/infractions.py add --login NAME --track contributor --reason "Merged #123 with failing checks" --evidence https://github.com/Hound-Protocol/Joint-Operations/pull/123 --by YOURNAME
+python3 infractions.py add --login NAME --track contributor --reason "Merged #123 with failing checks" --evidence <link> --by YOURNAME
 ```
 Use `--track duty` for role holders.
 5. **Tell the person** (mention them and, if possible, a Discord message): the reason, how many active infractions they have, how they clear (five clean deliveries) and how to appeal.
@@ -27,7 +27,7 @@ Use `--track duty` for role holders.
 ## Recording clean work
 Each merged delivery (contributor track) or completed duty (duty track) by someone with an active infraction is a credit:
 ```
-python3 tools/infractions.py credit --login NAME --track contributor --evidence https://github.com/Hound-Protocol/Joint-Operations/pull/130
+python3 infractions.py credit --login NAME --track contributor --evidence <link>
 ```
 Five credits clear the oldest active infraction. The tool does this by itself.
 
@@ -36,18 +36,10 @@ Five credits clear the oldest active infraction. The tool does this by itself.
 2. Assign someone one level above the issuer who was not involved. For appeals against Administration, that is the owner.
 3. Read the evidence and the person's side. Ask questions in the open where possible.
 4. Decide and write the reason on the appeal:
-   - **Overturn:**
-```
-python3 tools/infractions.py overturn --id INF-0003 --reason "Checks were not required yet" --by YOURNAME
-```
-   - **Reinstate** (lift a suspension, clean slate):
-```
-python3 tools/infractions.py reinstate --login NAME --track contributor --by YOURNAME --evidence https://github.com/Hound-Protocol/Joint-Operations/issues/140
-```
+   - **Overturn:** `python3 infractions.py overturn --id INF-0003 --reason "Checks were not required yet" --by YOURNAME`
+   - **Reinstate** (lift a suspension, clean slate): `python3 infractions.py reinstate --login NAME --track contributor --by YOURNAME --evidence <link>`
    - **Uphold:** explain why, and that they can appeal again with new information.
 5. For a reinstated role holder, Administration restores the role.
 
 ## Checking someone's standing
-```
-python3 tools/infractions.py status --login NAME
-```
+`python3 infractions.py status --login NAME`

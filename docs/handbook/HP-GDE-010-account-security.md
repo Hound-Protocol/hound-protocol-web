@@ -1,5 +1,5 @@
 # Account Security Setup
-Code: HP-GDE-010 · Version 1.1 · Effective 2026-10-23 · Owner: Administration · For: department members, contractors and anyone with access
+Code: HP-GDE-010 · Version 2.0 · Effective 2026-10-26 · Owner: Administration · For: department members, contractors and anyone with access
 
 Step by step setup for the rules in the [Security Policy](HP-POL-004-security-policy.md). About 20 minutes.
 
@@ -7,6 +7,7 @@ Step by step setup for the rules in the [Security Policy](HP-POL-004-security-po
 1. GitHub → **Settings → Password and authentication**.
 2. Turn on **two-factor authentication** with an authenticator app (Aegis, 2FAS, Google Authenticator, or your password manager).
 3. Save the **recovery codes** in your password manager.
+
 The Hound-Protocol organization requires 2FA. Without it, you are removed automatically.
 
 ## 2. Passkeys (LV6 and LV7)
@@ -29,13 +30,13 @@ git config --global commit.gpgsign true
 2. Never paste a bot token or webhook URL in any channel. If one leaks, follow [HP-SOP-006](HP-SOP-006-security-incident.md) at once.
 
 ## 5. Password manager
-Use one (Bitwarden, KeePassXC, 1Password). Shared team credentials live only there, never in chat or in the repository.
+Use one (Bitwarden, KeePassXC, 1Password). Shared team credentials live only there, never in chat or in a repository.
 
 ## 6. Your Hound ID
-Once you join a department, Administration issues your Hound ID ([HP-GDE-009](HP-GDE-009-grades-records-hound-ids.md)). Anyone can check it on the Verify page, so nobody can pretend to be you. The **signing key** from step 3 is also how you prove the card is yours: Verify → Prove a Hound ID → Prove it's me.
+Once you join a department, Administration issues your Hound ID ([HP-GDE-009](HP-GDE-009-grades-records-hound-ids.md)). Anyone can check it on the Verify page, so nobody can pretend to be you. The **signing key** from step 3 is also how you prove the card is yours.
 
 ## 7. Signing in to the website
-The website's **Sign in** uses your GitHub account and its two-factor login; there is no separate password. To remove the website's access at any time: GitHub → **Settings → Applications → Authorized GitHub Apps → Hound ID Sign-in → Revoke** ([Using the Website](HP-GDE-015-using-the-website.md#5-signing-in)).
+**Sign in** uses your GitHub account and its two-factor login. There is no separate password. To remove the website's access at any time: GitHub → **Settings → Applications → Authorized GitHub Apps → Hound ID Sign-in → Revoke**.
 
 ## If something goes wrong
 Lost device, leaked token or a strange login: tell Administration right away and follow [HP-SOP-006](HP-SOP-006-security-incident.md). Reporting fast is never held against you.

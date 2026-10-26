@@ -1,5 +1,5 @@
 # Security Incident and Leaked Secret Response
-Code: HP-SOP-006 · Version 1.0 · Effective 2026-10-22 · Owner: Administration · Used by: anyone who finds an incident; Administration leads
+Code: HP-SOP-006 · Version 2.0 · Effective 2026-10-26 · Owner: Administration · Used by: anyone who finds an incident; Administration leads
 
 ## First 15 minutes: contain
 1. **Revoke** the secret first: reset the token, rotate the key, remove the access. Do this before anything else.
@@ -12,10 +12,10 @@ Code: HP-SOP-006 · Version 1.0 · Effective 2026-10-22 · Owner: Administration
 - Re-sign contributor records if the records key was exposed ([HP-SOP-004](HP-SOP-004-records-and-ranks.md)).
 
 ## Within a week: learn
-Write a short note in #admin-board: what happened, impact, what was done, what changes. No blame. Update the relevant SOP.
+Write a short note in #admin-board: what happened, impact, what was done, what changes. No blame. Update the relevant procedure.
 
 ## Vulnerabilities reported by outsiders
-Follow [SECURITY.md](../../SECURITY.md): acknowledge within 3 days, fix privately, credit the reporter if they want.
+Use the repository's private vulnerability reporting. Acknowledge within 3 days, fix privately, and credit the reporter if they want.
 
 ## Common cases
 | Case | Action |

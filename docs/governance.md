@@ -1,11 +1,10 @@
 # Governance
+Status: Accepted · Date: 2026-10-22 · Updated: 2026-10-26 (organization-wide wording)
 
-Status: Accepted · Date: 2026-10-22 · Updated: 2026-10-23 (seats after the playable prototype)
-
-Hound Protocol works as a contract network: contributors come and go, and the project must not depend on any one person. It runs on **a solid hierarchy, open communication and transparency**.
+Hound Protocol works as a contract network. Contributors come and go, and a project must not depend on any one person. It runs on **a solid hierarchy, open communication and transparency**.
 
 ## Chain of command
-Authority comes in three kinds and only flows down the keycard levels, within its kind ([HP-POL-007](https://github.com/Hound-Protocol/Joint-Operations/blob/main/docs/guides/HP-POL-007-chain-of-command.md), [ADR 0013](decisions/0013-chain-of-command.md)).
+Authority comes in three kinds. It only flows down the keycard levels, within its kind ([HP-POL-007](handbook/HP-POL-007-chain-of-command.md), [ADR 0013](decisions/0013-chain-of-command.md)).
 
 | Role | Social | Technical | Organizational |
 |---|---|---|---|
@@ -19,11 +18,11 @@ Anyone can talk to anyone, in public by default. Decisions are written down with
 
 ## Decision making
 - Day-to-day decisions are made in pull requests and issues, by whoever holds that kind of authority.
-- Disagreements and appeals go one level up within the same kind of authority. The project lead has the final say.
-- Decisions with lasting effect are recorded in `docs/decisions/`.
+- Disagreements and appeals go one level up within the same kind of authority. The owner has the final say.
+- Decisions with lasting effect are recorded as ADRs. Organization decisions are in the [Library](decisions/0021-organization-and-project-documents.md). Project decisions are in the project.
 
 ## Seats
-Some duties cannot be fluid. They are held as **seats**: a role with a written checklist, a term, and at least two holders.
+Some duties cannot be fluid. They are held as **seats**: a role with a written checklist, a term and at least two holders.
 
 | Seat | Duties | Holders needed |
 |---|---|---|
@@ -34,19 +33,16 @@ Some duties cannot be fluid. They are held as **seats**: a role with a written c
 | Technical lead | Technical direction, architecture and merge approval (Development) | 1 or more |
 | Moderator | Community safety | 2 or more |
 
-- **When:** seats other than the project lead are filled once there is a playable prototype (project lead, 2026-10-23). Until then the project lead holds them, and the Team page shows them as "After prototype".
+- **When:** seats other than the project lead are filled once there is a playable prototype. Until then the project lead holds them.
 - Terms run 3 to 6 months, then renew or rotate.
-- Handoffs are done the same day: access removed and granted together.
+- Handoffs happen the same day: access is removed and granted together.
 - Shared credentials live in a password manager, never in chat.
 
 ## AI agents
-AI agents such as Claude work as **contractors' tools**: work is credited to the person who did it, with the agent named ("TrueMan, with Claude"), and detected automatically from commit trailers ([ADR 0015](decisions/0015-ai-agents-and-attribution.md)). Agents hold no seats, accounts or authority. The **technical lead** is a person; the seat opens with the playable prototype.
+AI agents such as Claude work as **tools of the person using them**. Work is credited to that person, with the agent named ("TrueMan, with Claude"), and is detected from commit trailers ([ADR 0015](decisions/0015-ai-agents-and-attribution.md)). Agents hold no seats, accounts or authority. The technical lead is a person.
 
-## Departments
-The project has four departments: Administration, Development, Quality and Contractor ([departments.md](departments.md), [ADR 0009](decisions/0009-departments-and-ranks.md)). Seats belong to Administration, except the technical lead (Development) and release signers (Quality).
-
-## Contractor grades
-Contractors are graded E to S++ in each field, like Mother Base staff in each unit ([departments.md](departments.md)). Grades unlock review rights and department invitations, never authority over people. Seat holders and department members are chosen from experienced contractors (S+ and up) or appointed by the project lead.
+## Departments and grades
+Four departments: Administration, Development, Quality and Contractor ([departments.md](departments.md), [ADR 0009](decisions/0009-departments-and-ranks.md)). Contractors are graded E to S++ in each field. Grades unlock review rights and invitations, never authority over people. Seat holders and department members come from experienced contractors (S+ and up) or are appointed by the project lead.
 
 ## Money
-No donations before 0.1 ([ADR 0010](https://github.com/Hound-Protocol/Joint-Operations/blob/main/docs/decisions/0010-funding.md)). After that, funds go through a fiscal host, every expense is published, and money never buys influence over decisions.
+Each project decides when it opens donations, and says so in its documents. Rules for all projects: funds go through a fiscal host, every expense is published, and money never buys influence over decisions.

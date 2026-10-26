@@ -1,8 +1,8 @@
 # Accountability and Infractions Policy
-Code: HP-POL-009 · Version 1.0 · Effective 2026-10-22 · Owner: Administration · Applies to: every contributor and every role holder, leads included
+Code: HP-POL-009 · Version 2.0 · Effective 2026-10-26 · Owner: Administration · Applies to: every contributor and every role holder, leads included, in every project
 
 ## 1. Purpose
-Joint Operations is a passion project, not a boot camp. There are **no deadlines and no time limits**: nobody is ever penalized for being slow, taking a break or leaving a contract. What we do ask is **care**: check your work before it reaches others, and do your role properly. This policy is how we hold everyone to that, the same way at every level ([ADR 0016](https://github.com/Hound-Protocol/hound-protocol-web/blob/main/docs/decisions/0016-accountability.md)).
+Hound Protocol projects are passion projects, not boot camps. There are **no deadlines and no time limits**: nobody is ever penalized for being slow, taking a break or leaving a contract. What we do ask is **care**: check your work before it reaches others, and do your role properly. This policy holds everyone to that, the same way at every level ([ADR 0016](../decisions/0016-accountability.md)).
 
 ## 2. Two tracks
 | Track | Who | About |
@@ -15,10 +15,10 @@ A role holder who also contributes has both tracks, counted separately.
 ## 3. What is an infraction
 **Contributor track**
 1. Work that breaks `main` or a release because the required checks were **skipped, bypassed or ignored**.
-2. Claiming testing that was not done, for example ticking "tested in-game" in the pull request when you did not.
+2. Claiming testing that was not done, for example ticking "tested" in the pull request when you did not.
 3. Repeating the same careless mistake after a written note about it.
 4. Bypassing review or branch protection.
-5. Carelessly breaking a hard rule: game files, copied mod code, generative AI art, secrets in the repository. (Deliberate breaches go straight to the [Contributor Policy](HP-POL-001-contributor-policy.md).)
+5. Carelessly breaking a hard rule: protected files, copied code, generative AI art, secrets in the repository. (Deliberate breaches go straight to the [Contributor Policy](HP-POL-001-contributor-policy.md).)
 
 **Duty track**
 1. Approving or merging work without the required checks or review.
@@ -60,12 +60,12 @@ Quality reports problems with evidence but does not issue infractions.
 - Appealing is never held against you.
 
 ## 7. Transparency
-- Every infraction has a written reason, an evidence link and the issuer's name. The record (`data/infractions.json`) is changed only through pull requests, so its history is public.
+- Every infraction has a written reason, an evidence link and the issuer's name. The record changes only through pull requests, so its history is public.
 - It records facts about the work, never personal judgments.
 - Overturned infractions are marked as overturned and never count.
 
 ## 8. Enforcement
 - **Contributor standing** check: pull requests by a suspended contributor fail the check and cannot be merged.
 - Claims: a suspended contributor's `/claim` is refused with a link to the appeal process.
-- **Broken main** incidents: when the checks fail on `main`, an issue opens automatically. That alone is not an infraction; a person reviews it (HP-SOP-011).
-- Keeping the record: `tools/infractions.py`, following [HP-SOP-011](HP-SOP-011-infractions-and-appeals.md).
+- **Broken main** incidents: when the checks fail on `main`, an issue opens automatically. That alone is not an infraction; a person reviews it ([HP-SOP-011](HP-SOP-011-infractions-and-appeals.md)).
+- Keeping the record follows [HP-SOP-011](HP-SOP-011-infractions-and-appeals.md).

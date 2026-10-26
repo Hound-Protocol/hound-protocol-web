@@ -1,43 +1,37 @@
 # Release Procedure and Versioning
-Code: HP-SOP-003 · Version 1.4 · Effective 2026-10-24 · Owner: Quality · Used by: release signers, technical lead
+Code: HP-SOP-003 · Version 2.0 · Effective 2026-10-26 · Owner: Quality · Used by: release signers, technical leads
 
 ## Version numbers
-The website and the mod have **separate version lines**, so a number always says which one it means.
+Every project keeps its own version line, and the number always says which one it means. A project that ships more than one product (for example a game and its website) keeps one line per product and tags them differently.
 
-| Line | Versions | Tags | Meaning |
+| Stage | Versions | Tag | Meaning |
 |---|---|---|---|
-| **Website** | **Site 1.0.0**, 1.1.0, … | `site-v1.0.0` | The website, documentation, tools and organization. Never marked *Latest* on GitHub |
-| **Mod** | **0.1** | `v0.1.0` | First playable build (2 players) |
-| | **0.x** | `v0.x.y` | Playable development builds, pre-release |
-| | **1.0** | `v1.0.0` | First stable release |
+| Foundation | 0.0.x | `v0.0.x` | Before the first playable build |
+| First playable | 0.1 | `v0.1.0` | A small playable build |
+| Development builds | 0.x | `v0.x.y` | Playable builds, pre-release |
+| Stable | 1.0 | `v1.0.0` | First stable release |
 
-- Website versions: **major** for a change in how the site works for everyone (a new clearance model), **minor** for new features, **patch** for fixes.
-- Before Site 1.0.0, the website used **0.0.1 to 0.0.41** (tags `v0.0.x`); those tags stay as they are.
-- The mod's builds get their own changelog when 0.1 arrives.
-- The top bar shows `Site X.Y.Z · build N · commit`, where build is the commit count, followed by the mod's stage.
+- **Major** changes how the product works for everyone, **minor** adds features, **patch** fixes.
+- Each project writes its own changelog. Its documents say which tag prefix belongs to which product.
 
 ## Work goes on the board first
-All work goes on the Contribute page's board, whoever does it: contractors, staff, the owner, or anyone working with an AI agent. Every card shows who is working on it, and who completed it with any agent named.
-- **Starting something:** `python3 tools/work.py add --title "…" --module web` (new foundation item, ID `F…`), then `python3 tools/work.py start F05 --login <github-name> [--agent Claude]`.
-- **Finishing it:** `python3 tools/work.py done F05 --login <github-name> [--agent Claude]`, in the same pull request as the work.
-- **Stopping without finishing:** `python3 tools/work.py drop F05 --login <github-name>`.
-- After 0.1, contracts are GitHub issues and `/claim` does the same.
+All work goes on the project's board, whoever does it: contractors, staff, the owner, or anyone working with an AI agent. Every card shows who is working on it and, once done, who finished it with any agent named. After a project opens contracts, contracts are GitHub issues and `/claim` does the same.
 
 ## Steps
-1. **Prepare.** Update `CHANGELOG.md` with a new section, `## Site X.Y.Z · Name · YYYY-MM-DD`, then the highlights. The release check fails if the version changes without its section.
-2. **Bump and roadmap.** Set `"version"` in `joint-operations-web/site/data/config.json`, and update `ROADMAP.md`: tick finished items, add new ones. The release check fails if the version changes without a roadmap update. The Roadmap page draws `ROADMAP.md` as a base under construction, so ticking items fills the platforms; when a release adds something new to the project, also give the base a matching detail (for example a new platform feature or more activity), so the picture grows with the project.
-2b. **Check off the work.** Mark every finished item done with `tools/work.py`. The release check fails if the version changes and the board does not.
-3. **Pull request.** Everything for the release goes in one pull request, titled `Site X.Y.Z · <name>`.
-4. **Quality gate.** All checks green. For game builds: the checklist in [HP-POL-006](HP-POL-006-quality-policy.md) section 3.
-5. **Merge.** The site deploys automatically.
-6. **Tag and publish (automatic).** The Release workflow sees the new version on `main`, creates tag `site-vX.Y.Z` on the merge commit, and publishes a GitHub release with the changelog section as notes. Website releases are never marked *Latest*, so GitHub's Latest always points at a mod build. If it fails, run it again from the Actions tab (Release → Run workflow).
-7. **Announce.** Short post in #announcements with the release link. When there is news beyond the changelog (a decision, a milestone, a change in how we work), add an entry at the top of the [Dev Log](../devlog.md).
+1. **Prepare.** Add a new changelog section: version, name, date, highlights. The release check fails if the version changes without its section.
+2. **Bump and roadmap.** Set the version where the project keeps it, and update the roadmap: tick finished items, add new ones.
+3. **Check off the work.** Mark every finished item done on the board.
+4. **Pull request.** Everything for the release goes in one pull request, titled with the version and a name.
+5. **Quality gate.** All checks green. For builds players install: the gates in [HP-POL-006](HP-POL-006-quality-policy.md) section 3.
+6. **Merge.** Websites deploy automatically.
+7. **Tag and publish (automatic).** The release workflow sees the new version on `main`, creates the tag on the merge commit and publishes a GitHub release with the changelog section as notes. If it fails, run it again from the Actions tab.
+8. **Announce.** Short post in #announcements with the release link. For news beyond the changelog (a decision, a milestone, a change in how we work), add an entry to the project's dev log.
 
-## Game builds (from 0.1)
+## Builds players install
 - Built by CI only, never on a personal machine.
 - Attach the files and a `SHA256SUMS` file to the release.
 - Two release signers approve: one from Quality, one from Administration.
-- The Download page lists only releases from 0.1 onward. Foundation releases are in the [Changelog](../../CHANGELOG.md).
+- The download page lists only releases from the first playable build onward.
 
 ## Fixing a bad release
 Never delete a published release. Publish a fixed version (patch number +1), mark the bad one in its notes, and post in #announcements.

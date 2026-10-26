@@ -238,3 +238,11 @@ footer .fine { grid-column: 1 / -1; margin-top: 20px; padding-top: 20px; border-
 @media (max-width: 860px) {
   .docs-main { padding-top: 96px; }
 }
+
+/* Project groups: the main project, then the side projects */
+.grp { display: flex; align-items: baseline; gap: 18px; margin: 46px 0 18px; font: 400 13px/1 var(--mono); letter-spacing: .26em; text-transform: uppercase; color: var(--fg-2); }
+.grp:first-of-type { margin-top: 8px; }
+.grp span { color: var(--red-hi); }
+.grp small { font: 400 12px/1.4 var(--mono); letter-spacing: .08em; text-transform: none; color: var(--fg-2); }
+.grp::after { content: ""; flex: 1; height: 1px; background: var(--line); order: 3; align-self: center; }
+@media (max-width: 700px) { .grp { flex-wrap: wrap; gap: 8px 14px; } .grp::after { flex-basis: 100%; order: 4; } }

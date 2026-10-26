@@ -1,22 +1,26 @@
 # Glossary
 Status: Current · Updated: 2026-10-26 · Applies to: everyone
 
-Words Hound Protocol uses in its documents. Project-specific terms are in each project's own glossary.
+Words that Hound Protocol documents use for the whole organization. A project's own terms live in that project's glossary.
 
 | Term | Meaning |
 |---|---|
-| ADR | Architecture decision record: a short note of what was decided, by whom and why. Never deleted; a new one supersedes it |
 | Acceptance criteria | The checklist a reviewer uses to accept a contract |
+| ADR | Architecture decision record: a short note of what was decided, by whom and why. Never deleted; a new one replaces it |
 | Chain of command | Who may decide what over whom: social, technical and organizational authority ([HP-POL-007](handbook/HP-POL-007-chain-of-command.md)) |
-| Contract | A task on the contract board: a GitHub issue labeled `contract` |
+| Clean room | Working from public facts and your own words, never from copied code or files ([HP-POL-003](handbook/HP-POL-003-third-party-rights.md)) |
+| Contract | A task on a project's contract board: a GitHub issue labeled `contract` |
 | Contractor | A contributor who takes a contract, delivers it and may leave at any time |
-| Contractor grade | E, D, C, B, A, A+, A++, S, S+ or S++ in each field, earned from contract points. The overall grade is the best one |
-| Contributor record | A signed statement that a person completed a contract; it can be checked on the Verify page |
-| Department | One of the parts of Hound Protocol: Administration, Development, Quality, Contractor ([Departments and Grades](departments.md)) |
-| Handbook | The policies, procedures and guides (HP-POL, HP-SOP, HP-GDE), printable on A4 |
+| Contributor record | A signed statement that a person completed a contract. Anyone can check it |
+| Department | One of Administration, Development, Quality, Contractor ([Departments and Grades](departments.md)) |
+| Field | A column of work contracts fall into (Code, Architecture research, Testing, Design and web, Docs and legal). Grades are held per field |
+| Grade | E, D, C, B, A, A+, A++, S, S+ or S++ in each field. The overall grade is the best one. Grades give no authority |
+| Handbook | The policies, procedures and guides, printable on A4 |
 | Hound ID | A staff member's permanent ID (HND-0001), tied to their GitHub account |
-| Infraction | A recorded consequence for careless work or a skipped duty, at any level, leads included. Three suspend; appeals are always open ([HP-POL-009](handbook/HP-POL-009-accountability.md)) |
-| Keycard | A staff or member card with a clearance level, LV1 to LV7 |
-| Library | The organization documents, decisions, brand and project pointers |
-| Proton | Valve's compatibility layer for running Windows games on Linux |
-| Seat | A role with duties, a term and at least two holders; critical seats fill once there is a playable prototype ([Governance](governance.md)) |
+| Infraction | A recorded consequence for careless work or a skipped duty, at any level. Three suspend; appeals are always open ([HP-POL-009](handbook/HP-POL-009-accountability.md)) |
+| Keycard | A card with a clearance level, LV0 to LV7 |
+| Library | Organization documents, decisions, brand and project pointers |
+| Main project | The project the organization puts first. Today: AFTERHAUL ([Projects](projects.md)) |
+| Project | A product Hound Protocol builds, with its own repository, team and documentation ([Projects](projects.md)) |
+| Side project | Any other project, built beside the main one ([Projects](projects.md)) |
+| Seat | A role with duties, a term and at least two holders ([Governance](governance.md)) |
