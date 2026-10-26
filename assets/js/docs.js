@@ -234,7 +234,9 @@
   }
   function showSheet(d, anchor) {
     var desk = document.getElementById("desk"); if (!desk) return;
-    desk.innerHTML = '<div class="sheet loading"><p class="note">Loading&hellip;</p></div>';
+    var hadSheet = !!desk.querySelector(".sheet .doc"), old = desk.querySelector(".sheet");
+    if (!hadSheet) desk.innerHTML = '<div class="sheet loading"><p class="note">Loading&hellip;</p></div>';
+    else if (old) old.classList.add("dim");
     text(d).then(function (md) {
       current = d;
       var isHb = d.zone === "handbook";
@@ -252,7 +254,7 @@
         metaGrid + jumpList(tmp) + '<div class="doc">' + body + "</div>" +
         '<footer class="s-foot"><span>' + esc(d.num) + (isHb ? " &middot; v" + esc(d.version) + " &middot; " + esc(d.effective) : "") + "</span><span>Uncontrolled when printed. Current version: " + esc(url) + "</span></footer></div></div>";
       wireSheet(desk);
-      if (!REDUCED) { var sh = desk.querySelector(".sheet"); sh.classList.add("print"); }
+      if (!REDUCED) { var sh = desk.querySelector(".sheet"); sh.classList.add(hadSheet ? "rise" : "print"); }
       var target = anchor && document.getElementById(anchor);
       var hit = highlight(desk.querySelector(".doc"));
       if (target) target.scrollIntoView(); else if (hit) hit.scrollIntoView({ block: "center" });

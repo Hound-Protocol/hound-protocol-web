@@ -116,6 +116,13 @@ kbd { display: inline-block; padding: 1px 6px; font: 400 12px/1.4 var(--mono); l
 .sheet.print .paper { animation: printIn .7s var(--ease) both; }
 .sheet.print .scan { animation: scan .7s var(--ease) both; }
 .sheet.print .stamp { animation: slam .5s .45s var(--ease) both; }
+/* Switching files: the new sheet slides up from the bottom. Its own motion, apart from the first print-in. */
+.sheet.dim { opacity: .45; transition: opacity .15s linear; }
+.sheet.rise { animation: riseUp .55s cubic-bezier(.16,1,.3,1) both; }
+.sheet.rise .tab { animation: tabUp .5s .08s cubic-bezier(.16,1,.3,1) both; }
+.sheet.rise .stamp { animation: slam .45s .4s var(--ease) both; }
+@keyframes riseUp { from { opacity: 0; transform: translateY(72px); } 40% { opacity: 1; } to { opacity: 1; transform: none; } }
+@keyframes tabUp { from { transform: translateY(26px); opacity: 0; } to { transform: none; opacity: 1; } }
 @keyframes printIn { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
 @keyframes scan { 0% { top: 0; opacity: 1; } 92% { opacity: 1; } 100% { top: 100%; opacity: 0; } }
 @keyframes slam { 0% { opacity: 0; transform: scale(1.6) rotate(-7deg); } 60% { opacity: 1; transform: scale(.96) rotate(-3deg); } 100% { opacity: 1; transform: rotate(-3deg); } }
@@ -188,7 +195,7 @@ kbd { display: inline-block; padding: 1px 6px; font: 400 12px/1.4 var(--mono); l
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   .door, .drawer-b, .cards, .dh-c, .card, .door::before, .door::after, .door-go i { transition: none !important; }
-  .door, .drawer.open .card, .sheet.print .paper, .sheet.print .scan, .sheet.print .stamp { animation: none !important; }
+  .door, .drawer.open .card, .sheet.print .paper, .sheet.print .scan, .sheet.print .stamp, .sheet.rise, .sheet.rise .tab, .sheet.rise .stamp { animation: none !important; }
   .stamp { transform: rotate(-3deg); }
 }
 
