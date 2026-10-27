@@ -6,7 +6,7 @@ Hound Protocol has one main project and several side projects. Each has its own 
 ## Main project
 | Project | State | What it is | Its documentation |
 |---|---|---|---|
-| **AFTERHAUL** | In development | An offroad trucking game for crews of up to 8 players. Our main project | Kept by the project team. Public pages appear when the project is ready to share |
+| **AFTERHAUL** | In development | An offroad trucking game for crews of up to 8 players. Our main project | Kept by the project team. Preview website: [hound-protocol.github.io/afterhaul-web](https://hound-protocol.github.io/afterhaul-web/). Full pages appear when the project is ready to share |
 
 ## Side projects
 | Project | State | What it is | Its documentation |
